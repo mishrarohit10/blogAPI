@@ -1,7 +1,7 @@
 from fastapi import Depends, HTTPException, Response, status
 from sqlalchemy.orm import Session
-import models
-import schemas
+from blogs import schemas, models
+
 
 def get_all(db:Session):
     blogs = db.query(models.Blog).all()

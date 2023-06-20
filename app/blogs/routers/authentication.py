@@ -1,16 +1,16 @@
-
-import tokens
+from fastapi.security import OAuth2PasswordRequestForm
+import blogs.tokens
 from fastapi import APIRouter, Depends , HTTPException, status
-import schemas , database, models
+from blogs import schemas , database, models
 from sqlalchemy.orm import Session
-from hashing import Hash
+from blogs.hashing import Hash
 
 router = APIRouter(
-    tags=["authentication"]
+    tags=["Authentication"]
 )
 
 @router.post('/login')
-def login(req:schemas.login, db:Session = Depends(database.get_db)):
+def login(req:OAuth2PasswordRequestForm = Depends(  ), db:Session = Depends(database.get_db)):
     user = db.query(models.User).filter(models.User.email == req.username).first()
     if not user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail = f"invalid credentials")

@@ -1,10 +1,11 @@
 from fastapi import FastAPI, Depends , status , Response, HTTPException
 from sqlalchemy.orm import Session
-from routers import blog, user, authentication
-import schemas , models 
-from database import engine, get_db
-from hashing import Hash
+from blogs.routers import blog, user, authentication
+from blogs import models
+from blogs.database import engine, get_db
+from blogs.hashing import Hash
 from sqlalchemy.orm import Session
+
 
 # import uvicorn
 # if __name__ == "__main__":# #uvicorn.run(app, host = "127.0.0.1" ,port = 9000)  custom port 

@@ -3,9 +3,7 @@
 This is a FastAPI-based API for managing blogs and users. It provides endpoints for creating, retrieving, updating, and deleting blogs, as well as creating and retrieving users.
 Installation
 
-    Clone the repository:
-
-    bash
+### Clone the repository:
 ```
 git clone <https://github.com/mishrarohit10/blogAPI>
 ```
@@ -18,6 +16,7 @@ git clone <https://github.com/mishrarohit10/blogAPI>
     Run the API server:
 
 ```
+    cd app
     uvicorn main:app --reload
 ```
     Open your web browser and navigate to http://localhost:8000/docs to access the Swagger UI. This interactive documentation provides detailed information about the available endpoints and allows you to make requests directly.

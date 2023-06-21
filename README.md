@@ -1,7 +1,9 @@
 # Blogs API
 
-This is a FastAPI-based API for managing blogs and users. It provides endpoints for creating, retrieving, updating, and deleting blogs, as well as creating and retrieving users.
-Installation
+This is a FastAPI-based API for managing blogs and users. It provides endpoints for creating, retrieving, updating, and deleting blogs, login authentication as well as creating and retrieving users.
+
+
+# Installation
 
 ## Clone the repository:
 ```
@@ -13,7 +15,7 @@ git clone <https://github.com/mishrarohit10/blogAPI>
 ```
 # Usage
 
-    Run the API server:
+Run the API server:
 
 ```
     cd app

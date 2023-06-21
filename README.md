@@ -2,6 +2,7 @@
 
 This is a FastAPI-based API for managing blogs and users. It provides endpoints for creating, retrieving, updating, and deleting blogs, login 'authentication' as well as creating and retrieving users.
 
+![Lets get started](https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fengineer-dogesh-30221124a&psig=AOvVaw1hmDgsYjw_fCxIEJ9TQl1A&ust=1687460483044000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKCih6iG1f8CFQAAAAAdAAAAABAE)
 
 # Installation
 

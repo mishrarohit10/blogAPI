@@ -2,7 +2,6 @@ from fastapi import Depends, HTTPException, Response, status
 from sqlalchemy.orm import Session
 from blogs import schemas, models
 
-
 def get_all(db:Session):
     blogs = db.query(models.Blog).all()
     return blogs
@@ -27,10 +26,13 @@ def update(id:int, req:schemas.Blog, db:Session):
     db.commit()
     return 'updated'
 
-def get_by_id(id:int,response:Response,db:Session):
+def show(id:int,db:Session):
     blogs = db.query(models.Blog).filter(models.Blog.id == id).first()
     if not blogs:
         raise HTTPException(status.HTTP_404_NOT_FOUND,detail=f'Blog with id {id} not found')
         # response.status_code = status.HTTP_404_NOT_FOUND
         # return {'detail':f'Blog with id {id} not found'}
-    return blogs
+    return blogs    
+
+
+

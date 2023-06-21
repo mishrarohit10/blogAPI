@@ -12,7 +12,6 @@ git clone <https://github.com/mishrarohit10/blogAPI>
 ## Install the required dependencies:
 ```
     pip install -r requirements.txt
-
 ```
 
 # Usage
@@ -23,7 +22,7 @@ Run the API server:
     cd app
     uvicorn main:app --reload
 ```
-    Open your web browser and navigate to 'http://localhost:8000/docs' to access the **Swagger UI**. This interactive documentation provides detailed information about the available endpoints and allows you to make requests directly.
+    Open your web browser and navigate to http://localhost:8000/docs to access the 'Swagger UI'. This interactive documentation provides detailed information about the available endpoints and allows you to make requests directly.
 
 
 # Create User
